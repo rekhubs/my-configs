@@ -1,1 +1,1 @@
-## hello
+`git-ps1.sh` from repo [https://github.com/vergenzt/git-colored-ps1](https://github.com/vergenzt/git-colored-ps1)

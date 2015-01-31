@@ -1,5 +1,10 @@
 
 
+# key binds
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
+
+
 # aliases
 alias ls='ls --color=auto'
 alias ll='ls -al'

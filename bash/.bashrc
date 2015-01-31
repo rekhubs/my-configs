@@ -3,6 +3,7 @@
 # aliases
 alias ls='ls --color=auto'
 alias ll='ls -al'
+alias lll='lsl -l'
 alias grep='grep --color=auto'
 
 # functions
@@ -13,4 +14,10 @@ function cdl() {
 	pwd
 	ls -l
 }
+
+# ls --> less
+function lsl(){
+	ls $1 | less
+}
+
 

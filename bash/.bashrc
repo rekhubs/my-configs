@@ -8,16 +8,16 @@ alias grep='grep --color=auto'
 
 # functions
 
-# cd to $1, and then ll
+# cd, and then ll
 function cdl() {
-	cd $1
+	cd $@
 	pwd
 	ls -l
 }
 
 # ls --> less
 function lsl(){
-	ls $1 | less
+	ls $@ | less
 }
 
 

@@ -19,7 +19,7 @@ bind '"\e\e[D":backward-word'
 
 
 # aliases
-if [ "$(uname)" =~ "Darwin" ]; then
+if [[ "$(uname)" =~ "Darwin" ]]; then
     alias ls='ls -hG'
 else
     alias ls='ls --color=auto'

@@ -1,5 +1,9 @@
 
 
+# simple PS1
+export PS1='[\t] \w> '
+
+
 # key binds
 # search history with already typed
 bind '"\e[A": history-search-backward'

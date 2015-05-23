@@ -15,7 +15,12 @@ bind '"\e\e[D":backward-word'
 
 
 # aliases
-alias ls='ls --color=auto'
+if [ "$(uname)" =~ "Darwin" ]; then
+    alias ls='ls -hG'
+else
+    alias ls='ls --color=auto'
+fi
+
 alias ll='ls -Al'
 alias lll='lsl -l'
 alias grep='grep --color=auto'

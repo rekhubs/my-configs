@@ -1,139 +1,78 @@
 {
   "cfgver": 2.3,
-  "others": {
-    "tuilink": false
-  },
-  "normal": {
-    "gesture": true,
-    "drag": true,
-    "scroll": false,
-    "autocancel": false,
-    "autocancelvalue": 2,
-    "lasttab": false,
-    "scrolleffects": true,
-    "newtabposition": "chrome",
-    "minilength": 10,
-    "capturetype": "jpeg",
-    "jpegquality": 100,
-    "cancelcontextmenu": true,
-    "dbclicktime": 600
-  },
-  "gesture": {
-    "gestureui": true,
-    "stroke": true,
-    "direct": true,
-    "tooltip": true,
-    "strokecolor": "49d676",
-    "strokewidth": 5,
-    "strokeopa": 0.8,
-    "directcolor": "58ced6",
-    "directopa": "1",
-    "tooltipcolor": "eaf038",
-    "tooltipwidth": "37",
-    "tooltipopa": 0.9,
-    "geskey": "right",
-    "stenable": false,
-    "gholdkey": "none",
-    "gesPos": "cc",
-    "gesture": [
+  "drag": {
+    "ddirect": true,
+    "ddirectcolor": "58ced6",
+    "ddirectopa": 0.9,
+    "dholdkey": "none",
+    "dragimage": true,
+    "draginput": false,
+    "draglink": true,
+    "dragtext": true,
+    "dragui": true,
+    "dstroke": true,
+    "dstrokecolor": "49d676",
+    "dstrokeopa": 0.8,
+    "dstrokewidth": 5,
+    "dtooltip": true,
+    "dtooltipcolor": "e620a7",
+    "dtooltipopa": 0.9,
+    "dtooltipwidth": "37",
+    "image": [
       {
+        "action": "I_open",
         "direct": "L",
-        "action": "G_back"
-      },
-      {
-        "direct": "R",
-        "action": "G_go"
-      },
-      {
-        "direct": "U",
-        "action": "G_top"
-      },
-      {
-        "direct": "D",
-        "action": "G_bottom"
-      },
-      {
-        "direct": "DR",
-        "action": "G_close",
-        "moreCloseopts": "close",
-        "moreClosesel": "chrome",
-        "moreCloseurl": "chrome://newtab/"
-      },
-      {
-        "direct": "LU",
-        "action": "G_reclosedtab",
-        "moreTarget": "newfront",
-        "morePosition": "chrome",
+        "moreDes": "打开图片(新标签页,后台)",
         "morePinned": "unpinned",
-        "moreDes": "重新打开关闭的标签页"
+        "morePosition": "chrome",
+        "moreTarget": "newback"
       },
       {
-        "direct": "RD",
-        "action": "G_bottom"
-      },
-      {
-        "direct": "RU",
-        "action": "G_top"
-      },
-      {
-        "direct": "UD",
-        "action": "G_reload"
-      },
-      {
-        "direct": "UDU",
-        "action": "G_reloadclear"
-      },
-      {
-        "direct": "UL",
-        "action": "G_lefttab"
-      },
-      {
-        "direct": "UR",
-        "action": "G_righttab"
-      },
-      {
-        "direct": "DRU",
-        "action": "G_newwindow"
-      },
-      {
-        "direct": "URD",
-        "action": "G_closewindow"
-      },
-      {
-        "direct": "RDLU",
-        "action": "G_crxsettings",
-        "moreDes": "进入扩展设置页",
+        "action": "I_open",
+        "direct": "R",
+        "moreDes": "打开图片(新标签页,前台)",
         "morePinned": "unpinned",
         "morePosition": "chrome",
         "moreTarget": "newfront"
+      },
+      {
+        "action": "I_save",
+        "direct": "D"
       }
-    ]
-  },
-  "drag": {
-    "dragui": true,
-    "dstroke": true,
-    "ddirect": true,
-    "dtooltip": true,
-    "dstrokecolor": "4E1485",
-    "dstrokewidth": 5,
-    "dstrokeopa": 0.8,
-    "ddirectcolor": "5E6A88",
-    "ddirectopa": 0.9,
-    "dtooltipcolor": "120310",
-    "dtooltipwidth": 18,
-    "dtooltipopa": 0.9,
-    "dragtext": true,
-    "draglink": true,
-    "dragimage": true,
-    "draginput": false,
-    "setdragurl": true,
-    "imgfirstcheck": false,
+    ],
     "imgfirst": "none",
-    "dholdkey": "none",
+    "imgfirstcheck": false,
+    "link": [
+      {
+        "action": "L_copytext",
+        "direct": "L"
+      },
+      {
+        "action": "L_copyurl",
+        "direct": "R"
+      },
+      {
+        "action": "L_open",
+        "direct": "D",
+        "moreDes": "打开链接",
+        "morePinned": "unpinned",
+        "morePosition": "right",
+        "moreTarget": "newback"
+      },
+      {
+        "action": "L_open",
+        "direct": "U",
+        "moreDes": "打开链接",
+        "morePinned": "unpinned",
+        "morePosition": "right",
+        "moreTarget": "newfront"
+      }
+    ],
+    "setdragurl": true,
     "text": [
       {
-        "direct": "L",
         "action": "T_search",
+        "direct": "L",
         "moreDes": "使用%name搜索:\"%s\"(新标签页,后台)",
         "morePinned": "unpinned",
         "morePosition": "chrome",
@@ -141,8 +80,8 @@
         "moreTsearch": "sgoogle"
       },
       {
-        "direct": "R",
         "action": "T_search",
+        "direct": "R",
         "moreDes": "使用%name搜索:\"%s\"(新标签页,前台)",
         "morePinned": "unpinned",
         "morePosition": "chrome",
@@ -150,70 +89,128 @@
         "moreTsearch": "sgoogle"
       },
       {
-        "direct": "D",
-        "action": "T_copytext"
+        "action": "T_copytext",
+        "direct": "D"
       }
-    ],
-    "link": [
+    ]
+  },
+  "gesture": {
+    "direct": true,
+    "directcolor": "58ced6",
+    "directopa": "1",
+    "gesPos": "cc",
+    "geskey": "right",
+    "gesture": [
       {
-        "direct": "L",
-        "action": "L_copytext"
+        "action": "G_back",
+        "direct": "L"
       },
       {
-        "direct": "R",
-        "action": "L_copyurl"
+        "action": "G_go",
+        "direct": "R"
       },
       {
-        "direct": "D",
-        "action": "L_open",
-        "moreDes": "打开链接",
-        "moreTarget": "newback",
-        "morePosition": "right",
-        "morePinned": "unpinned"
+        "action": "G_top",
+        "direct": "U"
       },
       {
-        "direct": "U",
-        "action": "L_open",
-        "moreDes": "打开链接",
-        "moreTarget": "newfront",
-        "morePosition": "right",
-        "morePinned": "unpinned"
-      }
-    ],
-    "image": [
-      {
-        "direct": "L",
-        "action": "I_open",
-        "moreDes": "打开图片(新标签页,后台)",
-        "morePinned": "unpinned",
-        "morePosition": "chrome",
-        "moreTarget": "newback"
+        "action": "G_bottom",
+        "direct": "D"
       },
       {
-        "direct": "R",
-        "action": "I_open",
-        "moreDes": "打开图片(新标签页,前台)",
+        "action": "G_close",
+        "direct": "DR",
+        "moreCloseopts": "close",
+        "moreClosesel": "chrome",
+        "moreCloseurl": "chrome://newtab/"
+      },
+      {
+        "action": "G_reclosedtab",
+        "direct": "LU",
+        "moreDes": "重新打开关闭的标签页",
         "morePinned": "unpinned",
         "morePosition": "chrome",
         "moreTarget": "newfront"
       },
       {
-        "direct": "D",
-        "action": "I_save"
+        "action": "G_bottom",
+        "direct": "RD"
+      },
+      {
+        "action": "G_top",
+        "direct": "RU"
+      },
+      {
+        "action": "G_reload",
+        "direct": "UD"
+      },
+      {
+        "action": "G_reloadclear",
+        "direct": "UDU"
+      },
+      {
+        "action": "G_lefttab",
+        "direct": "UL"
+      },
+      {
+        "action": "G_righttab",
+        "direct": "UR"
+      },
+      {
+        "action": "G_newwindow",
+        "direct": "DRU"
+      },
+      {
+        "action": "G_closewindow",
+        "direct": "URD"
+      },
+      {
+        "action": "G_crxsettings",
+        "direct": "RDLU",
+        "moreDes": "进入扩展设置页",
+        "morePinned": "unpinned",
+        "morePosition": "chrome",
+        "moreTarget": "newfront"
       }
-    ]
+    ],
+    "gestureui": true,
+    "gholdkey": "none",
+    "stenable": false,
+    "stroke": true,
+    "strokecolor": "49d676",
+    "strokeopa": 0.8,
+    "strokewidth": 5,
+    "tooltip": true,
+    "tooltipcolor": "eaf038",
+    "tooltipopa": 0.9,
+    "tooltipwidth": "37"
+  },
+  "normal": {
+    "autocancel": false,
+    "autocancelvalue": 2,
+    "cancelcontextmenu": true,
+    "capturetype": "jpeg",
+    "dbclicktime": 600,
+    "drag": true,
+    "gesture": true,
+    "jpegquality": 100,
+    "lasttab": false,
+    "minilength": 10,
+    "newtabposition": "chrome",
+    "scroll": false,
+    "scrolleffects": true
+  },
+  "others": {
+    "tuilink": false
   },
   "scroll": {
-    "smooth": true,
+    "scrollaccele": 1,
     "scrollspeed": 3,
-    "scrollaccele": 1
+    "smooth": true
   },
   "scrollgesture": {
-    "tablist": true,
-    "tablistkey": "right",
-    "tablistVisual": true,
-    "sgsleftenable": true,
-    "sgsrightenable": false,
+    "fastSwitch": false,
+    "reverseFS": false,
     "sgsleft": [
       {
         "action": "G_top"
@@ -222,6 +219,7 @@
         "action": "G_bottom"
       }
     ],
+    "sgsleftenable": true,
     "sgsright": [
       {
         "action": "G_top"
@@ -230,12 +228,12 @@
         "action": "G_bottom"
       }
     ],
-    "fastSwitch": false,
-    "reverseFS": false
+    "sgsrightenable": false,
+    "tablist": true,
+    "tablistVisual": true,
+    "tablistkey": "right"
   },
   "strokegesture": {
-    "strpress": "up",
-    "strleftenable": true,
     "strleft": [
       {
         "action": "G_none"
@@ -244,7 +242,7 @@
         "action": "G_righttab"
       }
     ],
-    "strmiddleenable": false,
+    "strleftenable": true,
     "strmiddle": [
       {
         "action": "G_lefttab"
@@ -253,7 +251,8 @@
         "action": "G_righttab"
       }
     ],
-    "strrightenable": true,
+    "strmiddleenable": false,
+    "strpress": "up",
     "strright": [
       {
         "action": "G_lefttab"
@@ -261,7 +260,8 @@
       {
         "action": "G_none"
       }
-    ]
+    ],
+    "strrightenable": true
   },
   "sync": true
 }

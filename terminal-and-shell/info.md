@@ -4,3 +4,5 @@
 
 * j / autojump
 * z / zoxide https://github.com/ajeetdsouza/zoxide
+  * alg - https://github.com/ajeetdsouza/zoxide/wiki/Algorithm#matching
+* xxx

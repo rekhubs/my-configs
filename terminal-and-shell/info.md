@@ -3,3 +3,4 @@
 
 
 * j / autojump
+* z / zoxide https://github.com/ajeetdsouza/zoxide

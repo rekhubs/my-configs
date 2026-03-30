@@ -6,5 +6,7 @@
 * z / zoxide https://github.com/ajeetdsouza/zoxide
   * alg - https://github.com/ajeetdsouza/zoxide/wiki/Algorithm#matching
 * fzf
+* fd
 * ripgrep
   * guide - https://codapi.org/try/ripgrep/
+* The Silver Searcher
